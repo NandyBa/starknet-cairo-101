@@ -46,6 +46,7 @@ mod Ex03 {
         // To read the u128 value from a LegacyMap, use the read function (e.g. user_counters::read(sender_address))
         // To write a u128 value to a LegacyMap (mapping a u128 to a ContractAddress), use the write function (e.g. user_counters::write(sender_address, 0_u128))
         user_counters: LegacyMap::<ContractAddress, u128>,
+        my_custom_counters: LegacyMap::<ContractAddress, u128>,
     }
 
     ////////////////////////////////
