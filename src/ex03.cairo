@@ -126,6 +126,14 @@ mod Ex03 {
         user_counters::write(sender_address, 0_u128);
     }
 
+    #[external]
+    fn reset_my_counter() {
+        // Reading caller address
+        let sender_address: ContractAddress = get_caller_address();
+        // Reinitializing the user counter to 0 (resetting it)
+        my_custom_counters::write(sender_address, 0_u128);
+    }
+
 
     #[external]
     fn claim_points() {
