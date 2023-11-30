@@ -141,8 +141,12 @@ mod Ex03 {
         let sender_address: ContractAddress = get_caller_address();
         // Checking that user's counter is equal to 3 (the value we want to reach) and throwing an error if it is not
         let current_counter_value = user_counters::read(sender_address);
+        let current_my_counter_value = my_custom_counters::read(sender_address);
+
         // We are using the Cairo assert function to throw an error if the condition is not met
         assert(current_counter_value == 3_u128, 'Counter is not equal to 3');
+
+        assert(current_my_counter_value == 6_u128, 'Counter is not equal to 6');
 
         // Checking if the user has validated the exercise before
         validate_exercise(sender_address);
