@@ -31,7 +31,7 @@ Completing the exercises will earn you points in the form of an [ERC20 token](sr
 
 We hope you have fun participating in this workshop!
 
-## What you will learn
+## What you will learn ✍️
 
 - How to read Cairo 1 code
 - How to read Starknet smart contracts
