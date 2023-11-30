@@ -17,7 +17,7 @@ You can also ping me(@gyanlakshmi) or Omar(@omarespejel) on Telegram to tag you 
 
 Welcome!
 
-This tutorial is made for developers who are interested in learning how to read Cairo 1 code and Starknet smart contracts. By following it, you'll be able to get started in no time. Have fun!
+This tutorial is made for developers who are interested in learning how to read Cairo 1 code and Starknet smart contracts. By following it, you'll be able to get started in no time. Have fun! 🐉
 
 ## Introduction​
 
