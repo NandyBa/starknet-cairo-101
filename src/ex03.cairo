@@ -109,6 +109,15 @@ mod Ex03 {
         user_counters::write(sender_address, current_counter_value - 1_u128);
     }
 
+    fn increment_my_counter() {
+        // Reading caller address
+        let sender_address: ContractAddress = get_caller_address();
+        // Reading the counter from storage for the sender address (the key of the mapping) and storing it in a variable
+        let current_my_counter_value = my_custom_counters::read(sender_address);
+        // Writing updated value to storage (incrementing the counter by 2)
+        my_custom_counters::write(sender_address, current_my_counter_value + 3_u128);
+    }
+
     #[external]
     fn reset_counter() {
         // Reading caller address
