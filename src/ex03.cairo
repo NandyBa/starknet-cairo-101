@@ -77,7 +77,7 @@ mod Ex03 {
     fn get_my_custom_counters(account: ContractAddress) -> u128 {
         // We are not calling the read function without any parameter (e.g. user_counters::read()) but with a parameter (e.g. user_counters::read(sender_address))
         // because we want to read the value of the mapping for a specific key (the sender address)
-        let user_counter = user_counters::read(account);
+        let my_custom_counters = my_custom_counters::read(account);
         // We return the value of the counter. We can return a value without using the return keyword, similar to Rust
         my_custom_counters
     }
